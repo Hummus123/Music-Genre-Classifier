@@ -7,7 +7,7 @@ from Img_converter import nimage
 import pygame
 genres = ["Rock", "Pop", "Classical", "Hip Hop", "Rythm and blues", "Country", "Jazz", "Electronic"]
 genres = [i + " music" for i in genres]
-data = np.load("Main/Data.npy", allow_pickle = True)
+data = np.load("Data.npy", allow_pickle = True)
 df = pandas.DataFrame(data)
 df.columns = ["data", "tags"]
 model = keras.models.load_model('Models')
